@@ -1,0 +1,16 @@
+{
+    "name": "radionovel/pagination",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Rdl\\Pagination\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey Radionov"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
