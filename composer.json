@@ -3,7 +3,8 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Rdl\\Pagination\\": "src/"
+            "Rdl\\Pagination\\": "src/",
+            "Rdl\\Tests\\Pagination\\": "tests/"
         }
     },
     "authors": [
@@ -12,5 +13,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev"
+    }
 }
