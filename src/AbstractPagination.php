@@ -25,6 +25,25 @@ abstract class AbstractPagination implements ArrayAccess, Countable, IteratorAgg
     abstract public function jsonSerialize(): mixed;
 
     /**
+     * @param  \Closure  $callback
+     *
+     * @return $this
+     */
+    public function through(\Closure $callback): static
+    {
+        $this->items = array_map($callback, $this->items);
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function items(): array
+    {
+        return $this->items;
+    }
+
+    /**
      * @return \Traversable
      */
     public function getIterator(): Traversable
